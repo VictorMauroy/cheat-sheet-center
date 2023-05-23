@@ -3,7 +3,8 @@
 That cheat sheet is about how to create a git project and how to use a simple version of git.
 A list of ***Basics Commands***.
 
-1) ***How to start a repository***
+***1) How to start a repository***
+
 Go to your Github account, mine is [VictorMauroy](https://github.com/VictorMauroy)
 Then, go to Your Profile ==> Repositories ==> New
 Open it, clone it. Have you set an SSH key ? Yes ? Then Clone with the SSH link.
@@ -14,7 +15,7 @@ Good, it's ready.
 
 If you don't clone a project, you must use `git init`, to initialize the current repository as a git repository.
 
-2) ***Add, Save & Check***
+***2) Add, Save & Check***
 
 | Command | Description |
 | --- | --- |
