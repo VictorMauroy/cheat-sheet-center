@@ -5,8 +5,8 @@ A list of ***Basics Commands***.
 
 ***1) How to start a repository***
 
-Go to your Github account, mine is [VictorMauroy](https://github.com/VictorMauroy)
-Then, go to Your Profile ==> Repositories ==> New
+Go to your Github account, mine is [VictorMauroy](https://github.com/VictorMauroy).
+Then, go to Your Profile ==> Repositories ==> New.
 Open it, clone it. Have you set an SSH key ? Yes ? Then Clone with the SSH link.
 
 Take a terminal, go to the folder you want to import your project.
