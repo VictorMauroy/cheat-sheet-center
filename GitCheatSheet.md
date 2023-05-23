@@ -15,6 +15,7 @@ Good, it's ready.
 If you don't clone a project, you must use `git init`, to initialize the current repository as a git repository.
 
 2) **Add, Save & Check**
+
 | Command | Description |
 | --- | --- |
 | `git add <nom du fichier>` | Add a file as it his now to your next commit |
@@ -22,8 +23,4 @@ If you don't clone a project, you must use `git init`, to initialize the current
 |`git commit -m "Description/reasons"`| One line commit without opening a text interface|
 |`git log`|Show the last commits with their descriptions|
 |`git diff`|Show the modifications between your currents files and the last commit|
-|``||
-|``||
-|``||
-|``||
 
