@@ -29,9 +29,9 @@ If you don't clone a project, you must use `git init`, to initialize the current
 
 | Command | Description |
 | --- | --- |
-| `git push` | git |
-| `git pull` | git |
-| `git fetch` | git |
+| `git push` | Envoyer les commits locaux sur le dépôt distant|
+| `git pull` | Recevoir les changements et les fusionner à notre dépôt local. |
+| `git fetch` | Obtenir les changements distants sans les fusionner. |
 
 **4) Manage branchs**
 
