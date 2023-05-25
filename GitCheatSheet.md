@@ -49,6 +49,7 @@ If you don't clone a project, you must use `git init`, to initialize the current
 | Command | Description |
 | --- | --- |
 |`git merge <branch>`||
+|`git rebase <id commit>`||
 **7) Others : must know**
 
 **8) Upstream**
