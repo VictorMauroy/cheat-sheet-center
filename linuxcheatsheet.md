@@ -22,3 +22,5 @@ That cheat sheet is about a few linux commands that are good to know.
 |`rm`||
 
 |`man chut`|chut the man|
+|`man chut2`|chut the man|
+|`man chut3`|chut the man|
