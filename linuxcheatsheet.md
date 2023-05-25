@@ -17,10 +17,8 @@ That cheat sheet is about a few linux commands that are good to know.
 | Command | Description |
 | --- | --- |
 |`ls` | Show folder and file names inside the current folder|
+|`find -name <filename>` | Print the file's path of the searched file|
 
 **3) Remove**
-|`rm`||
-
-|`man chut`|chut the man|
-|`man chut2`|chut the man|
-|`man chut3`|chut the man|
+|`rm <file or directory>`|Remove file or directory|
+|`rm -r <file or directory>`|Remove non-empty file or directory|
