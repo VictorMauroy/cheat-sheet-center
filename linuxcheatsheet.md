@@ -19,3 +19,4 @@ That cheat sheet is about a few linux commands that are good to know.
 |`ls` | Show folder and file names inside the current folder|
 
 **3) Remove**
+|`rm`||
