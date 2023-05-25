@@ -20,3 +20,5 @@ That cheat sheet is about a few linux commands that are good to know.
 
 **3) Remove**
 |`rm`||
+
+|`man chut`|chut the man|
