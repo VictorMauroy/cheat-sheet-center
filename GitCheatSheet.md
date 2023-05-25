@@ -24,18 +24,25 @@ If you don't clone a project, you must use `git init`, to initialize the current
 |`git commit -m "Description/reasons"`| One line commit without opening a text interface|
 |`git log`|Show the last commits with their descriptions|
 |`git diff`|Show the modifications between your currents files and the last commit|
+|`git status`|Show staging modifications and modified files|
 
 **3) Send, Receive & Remote**
 
 | Command | Description |
 | --- | --- |
-| `git push` | Envoyer les commits locaux sur le dépôt distant|
-| `git pull` | Recevoir les changements et les fusionner à notre dépôt local. |
-| `git fetch` | Obtenir les changements distants sans les fusionner. |
+| `git push` | Send local commits to remote repository|
+| `git pull` | Receive remote changes and merge them to our local repository |
+| `git fetch` | Receive remote changes without merging |
 
 **4) Manage branchs**
 
-**5) Remove & Revert**
+| Command | Description |
+| --- | --- |
+|`git branch <branch name>`|Create a branch|
+|`git checkout <branch name>`|Move to another branch|
+|`git branch`|List all existing branchs. Special char '*' for current branch|
+
+**5) Remove, Restore & Revert**
 
 **6) Merge & Rebase**
 
