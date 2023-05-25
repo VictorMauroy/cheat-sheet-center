@@ -34,12 +34,14 @@ If you don't clone a project, you must use `git init`, to initialize the current
 | `git pull` | Receive remote changes and merge them to our local repository |
 | `git fetch` | Receive remote changes without merging |
 
+Why using `git fetch` ? It lets us check each file before merging them and avoid potential conflicts.
+
 **4) Manage branchs**
 
 | Command | Description |
 | --- | --- |
 |`git branch <branch name>`|Create a branch|
-|`git checkout <branch name>`|Move to another branch|
+|`git switch <branch name>`|Move to another branch|
 |`git branch`|List all existing branchs. Special char '*' for current branch|
 
 **5) Remove, Restore & Revert**
@@ -51,5 +53,10 @@ If you don't clone a project, you must use `git init`, to initialize the current
 |`git merge <branch>`||
 |`git rebase <id commit>`||
 **7) Others : must know**
+
+| Command | Description |
+| --- | --- |
+|`git stach`||
+
 
 **8) Upstream**
