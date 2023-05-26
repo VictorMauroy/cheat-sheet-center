@@ -50,13 +50,20 @@ Why using `git fetch` ? It lets us check each file before merging them and avoid
 
 | Command | Description |
 | --- | --- |
-|`git merge <branch>`||
-|`git rebase <id commit>`||
+|`git merge <branch>`|Merge the specified branch history into the current one|
+|`git rebase <id commit>`|Apply every commit of current branch ahead of a specified one|
+
+<details>
+<summary>Rebase & Merge understanding</summary>
+
+</details>
+<br>
+
 **7) Others : must know**
 
 | Command | Description |
 | --- | --- |
-|`git stach`||
+|`git stach`|Save local and staging changes without having to commit. Useful when you need to quickly work elsewhere|
 
 
 **8) Upstream**
