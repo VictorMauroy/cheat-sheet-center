@@ -1,13 +1,13 @@
-**Cheat Sheet Git et Github**
+## Cheat Sheet Git et Github
 
-That cheat sheet is about how to create a git project and how to use a simple version of git.
+This cheat sheet is about how to create a git project and how to use a simple version of git.
 A list of ***Basics Commands***.
 
-**1) How to start a repository**
+### 1) **How to start a repository**
 
 Go to your Github account, mine is [VictorMauroy](https://github.com/VictorMauroy).
-Then, go to Your Profile ==> Repositories ==> New.
-Open it, clone it. Have you set an SSH key ? Yes ? Then Clone with the SSH link.
+Then, go to Your Profile ==> Repositories ==> New.</br>
+Open it, clone it. Have you set an SSH key ? Yes ? Then clone with the SSH link.
 
 Take a terminal, go to the folder you want to import your project.
 Use `git clone <you SSH project link>`.
@@ -15,7 +15,7 @@ Good, it's ready.
 
 If you don't clone a project, you must use `git init`, to initialize the current repository as a git repository.
 
-**2) Add, Save & Check**
+### 2) **Add, Save & Check**
 
 | Command | Description |
 | --- | --- |
@@ -26,7 +26,7 @@ If you don't clone a project, you must use `git init`, to initialize the current
 |`git diff`|Show the modifications between your currents files and the last commit|
 |`git status`|Show staging modifications and modified files|
 
-**3) Send, Receive & Remote**
+### 3) **Send, Receive & Remote**
 
 | Command | Description |
 | --- | --- |
@@ -34,22 +34,22 @@ If you don't clone a project, you must use `git init`, to initialize the current
 | `git pull` | Receive remote changes and merge them to our local repository |
 | `git fetch` | Receive remote changes without merging |
 
-**4) Manage branchs**
+### 4) **Manage branchs**
 
 | Command | Description |
 | --- | --- |
 |`git branch <branch name>`|Create a branch|
-|`git checkout <branch name>`|Move to another branch|
+|`git switch <branch name>`|Move to another branch|
 |`git branch`|List all existing branchs. Special char '*' for current branch|
 
-**5) Remove, Restore & Revert**
+### 5) **Remove, Restore & Revert**
 
-**6) Merge & Rebase**
+### 6) **Merge & Rebase**
 
 | Command | Description |
 | --- | --- |
 |`git merge <branch>`||
 |`git rebase <id commit>`||
-**7) Others : must know**
+### 7) **Others : must know**
 
-**8) Upstream**
+### 8) **Upstream & Remote**
