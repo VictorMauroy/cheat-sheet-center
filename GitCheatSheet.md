@@ -22,6 +22,7 @@ If you don't clone a project, you must use `git init`, to initialize the current
 | `git add <nom du fichier>` | Add a file as it his now to your next commit |
 |`git commit`| Open a temporary text interface to enter your commit text and prepare your staging content to be send |
 |`git commit -m "Description/reasons"`| One line commit without opening a text interface|
+|`git commit --amend`|Allow to update the last commit message or add the current staging data|
 |`git log`|Show the last commits with their descriptions|
 |`git diff`|Show the modifications between your currents files and the last commit|
 |`git status`|Show staging modifications and modified files|
@@ -41,6 +42,8 @@ If you don't clone a project, you must use `git init`, to initialize the current
 |`git branch <branch name>`|Create a branch|
 |`git switch <branch name>`|Move to another branch|
 |`git branch`|List all existing branchs. Special char '*' for current branch|
+|`git branch -d <branch name>`|Remove a branch|
+|`git branch -m <new branch name>`|Move the current branch and change its name / rename a branch|
 
 ### 5) **Remove, Restore & Revert**
 
