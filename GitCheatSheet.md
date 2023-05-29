@@ -60,6 +60,18 @@ The main remote link is the origin of our own remote repository.
 
 ### 5) **Remove, Restore & Revert**
 
+| Remove commands | Description |
+| --- | --- |
+|`git rm <file or folder>`|Delete a file/folder in your local workspace and local git repository|
+|`git rm -rf <directory>`|Delete a folder and every files contained in it|
+|`git rm --cached <file/folder>`|Delete a file/folder on your local git repo but not from your workspace|
+|**Reset commands**|**Description**|
+|`git reset <file/folder>`|Undo git add but not local modifications / unstage files|
+|`git reset --hard`|Undo every modifications and unstage every files since last commit|
+|`git reset <commit id>`|Do not modify workspace but go to the specified commit and delete every commit done afterward|
+|**Revert commands**|**Description**|
+|`git revert <commit id>`|Create a new commit which is the opposite of the specified one|
+
 ### 6) **Merge & Rebase**
 
 | Command | Description |
