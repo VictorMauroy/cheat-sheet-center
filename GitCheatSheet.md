@@ -20,6 +20,17 @@ Good, it's ready.
 
 If you don't clone a project, you must use `git init`, to initialize the current repository as a git repository.
 
+***Setting your profile***
+
+Configure your username :
+```bash 
+git config --global user.name "<Votre nom d'utilisateur sur github>"
+```
+Configure your email :
+```bash
+git config --global user.email <johndoe@example.com>
+```
+
 ### 2) **Add, Save & Check**
 
 | Command | Description |
