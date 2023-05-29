@@ -3,6 +3,11 @@
 This cheat sheet is about how to create a git project and how to use a simple version of git.
 A list of ***Basics Commands***.
 
+<u>Usefull links</u> :
+- Git conventional commit message : https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
+- Add emoji for git messages (better undestanding) : https://gitmoji.dev/
+
+
 ### 1) **How to start a repository**
 
 Go to your Github account, mine is [VictorMauroy](https://github.com/VictorMauroy).
