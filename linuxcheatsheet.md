@@ -20,5 +20,7 @@ That cheat sheet is about a few linux commands that are good to know.
 |`find -name <filename>` | Print the file's path of the searched file|
 
 **3) Remove**
-|`rm <file or directory>`|Remove file or directory|
-|`rm -r <file or directory>`|Remove non-empty file or directory|
+| Command | Description |
+| --- | --- |
+|`rm <file or directory>` | Remove file or directory |
+|`rm -r <file or directory>` | Remove non-empty file or directory |
