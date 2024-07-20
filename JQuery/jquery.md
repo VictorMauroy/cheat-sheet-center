@@ -163,7 +163,25 @@ $("button").click(function(){
 ```
 
 ### Chain events
+It is possible to chain the events applied to an element. They will be triggered from left to right:
+```js
+// Applying styles and effects one after the other
+$("#p1").css("color", "red")
+  .slideUp(2000)
+  .slideDown(2000);
+```
+*Example from W3Schools*
 
+It can be particularly useful when you have to **chain event handler**:
+```js
+// The mouseleave won't happen if the mouseenter hadn't.
+$('#menu-button').on('mouseenter', () => {
+  $('#menu').show();
+}).on('mouseleave', () => {
+  $('#menu').hide();
+});
+```
+*Example from Codecademy*
 
 ## Style Methods
 
