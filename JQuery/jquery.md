@@ -99,7 +99,7 @@ const $myParagraphs = $('p');
 ```
 Follow the `camelCase` syntax and add a `$` before your variable name. This isn't required but it's a lot easier to know which variable is from native Javascript and which one is from jquery.
 
-## Event handler
+## Event handler and effects
 
 Once you're able to select elements inside your document, you will surely search how to add interaction. You can do that by hading **Event Handlers**.
 
@@ -116,6 +116,7 @@ $('.menu-button').on('click', () => {
 ```js
 $('.menu-button').click(function() {
   $('#nav-menu').show();
+  //You can add more lines
 });
 ```
 
@@ -128,6 +129,41 @@ There are many events that you can use, check the following array:
 |mouseleave||blur|unload|
 
 Learn more at the [W3School event handler page](https://www.w3schools.com/jquery/jquery_events.asp).
+
+### Arguments & Callbacks
+Take note that some events/effects can accept multiple arguments. 
+
+For instance, the `fade` method:
+```js
+$("button").click(function(){
+  
+  $("#div1").fadeIn(); //use of default parameters
+
+  $("#div3").fadeIn(3000); // Define your own duration in milliseconds.
+  
+  $("#div2").fadeIn("slow"); // Use a prepared string
+
+});
+```
+*Exemple from W3School.*
+
+It is also possible to **add a callback** at the end of a method (when the effect ends, trigger another function or code).
+```js
+$("button").click(function(){
+  
+    $("#div1").fadeIn(2000, function() {
+      $(this).css('backgroundColor', '#FFFFFF');    
+    }); // classic callback
+  
+  $("#div1").fadeIn(2000, () => {
+    $(this).css('backgroundColor', '#FFFFFF');    
+  }); // Use of an arrow function
+
+});
+```
+
+### Chain events
+
 
 ## Style Methods
 
