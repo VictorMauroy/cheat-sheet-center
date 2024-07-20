@@ -65,11 +65,39 @@ $(document).ready(() => {
     
     // Your Jquery code will be there !
 
+    $(/*Object to select*/).on('click', () => {
+    $(/* Current or another object*/).anAction(/* Parameters*/);
+});
+
 }
 ```
 That's important because you must **wait for the document (DOM) to be loaded before executing anything!**
 
 ## Define variable and select elements
+
+The main use of Jquery is to quickly select DOM elements and apply various effects and update to them.
+
+### Select an object
+You can select many things with jquery:
+```js
+$('.selector-button') // Select all object with the CLASS "selector-button"
+
+$('#highlighted') // Select the object with the ID "highlighted"
+
+$('p') // Select all the paragraphs. (Html object name)
+
+$(this) // Select the current object (usually inside an event handler)
+```
+
+Check [here](https://www.w3schools.com/jquery/jquery_selectors.asp) for more selectors. Like selecting with type, attribute or encapsulated elements.
+
+### Variables
+
+Saving the objects that your retrieved is quite easy, you can do that by defining a javascript variable and storing the result inside it.
+```js
+const $myParagraphs = $('p');
+```
+Follow the `camelCase` syntax and add a `$` before your variable name. This isn't required but it's a lot easier to know which variable is from native Javascript and which one is from jquery.
 
 ## Event handler
 
