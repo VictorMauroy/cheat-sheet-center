@@ -51,6 +51,19 @@ Remember to add it a the top of your `<script>` otherwise, using jquery inside o
 
 Jquery is now ready to be used. 
 
+### Creating a new file
+
+You'll have to create a file with the `.js` extension in order to write jquery things.
+
+Once the file is created, you will usually need to add those lines:
+```js
+$(document).ready(() => {
+    
+    // Your Jquery code will be there !
+
+}
+```
+That's important because you must **wait for the document (DOM) to be loaded before executing anything!**
 
 ## Define variable and select elements
 
