@@ -101,6 +101,34 @@ Follow the `camelCase` syntax and add a `$` before your variable name. This isn'
 
 ## Event handler
 
+Once you're able to select elements inside your document, you will surely search how to add interaction. You can do that by hading **Event Handlers**.
+
+### Define an event handler
+
+There a two ways to define an event with Jquery:
+- Use the `.on` notation:
+```js
+$('.menu-button').on('click', () => {
+  $('#nav-menu').show();
+});
+```
+- Call the event name
+```js
+$('.menu-button').click(function() {
+  $('#nav-menu').show();
+});
+```
+
+There are many events that you can use, check the following array:
+|Mouse events|Keyboards events|Forms events|Document / Windows events|
+|-|-|-|-|
+|click|keypress|submit|load|
+|dldclick|keydown|change|resize|
+|mouseenter|keyup|focus|scroll|
+|mouseleave||blur|unload|
+
+Learn more at the [W3School event handler page](https://www.w3schools.com/jquery/jquery_events.asp).
+
 ## Style Methods
 
 ## Moving inside the DOM
