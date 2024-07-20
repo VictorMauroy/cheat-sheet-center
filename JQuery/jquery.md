@@ -2,6 +2,10 @@
 
 That cheatsheet was made after following courses on Codecademy. I'll add a few useful informations as well as things good to remember.
 
+**USEFUL LINKS**
+* [Official Jquery website](https://jquery.com/)
+* [W3Schools complete tutorial](https://www.w3schools.com/jquery/default.asp)
+
 First, let's look at an example which compare basic javascript and jquery:
 ```js
 //Selecting DOM elements and adding an event listener in JS
