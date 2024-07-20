@@ -103,6 +103,10 @@ Follow the `camelCase` syntax and add a `$` before your variable name. This isn'
 
 Once you're able to select elements inside your document, you will surely search how to add interaction. You can do that by hading **Event Handlers**.
 
+When you define an event handler, Jquery will automaticaly add the corresponding event to the targeted element.
+<br>
+For instance, `$('.menu-button').on('click', () => {});` will add a `click` event to every objects with the class `.menu-button`.
+
 ### Define an event handler
 
 There a two ways to define an event with Jquery:
@@ -129,6 +133,21 @@ There are many events that you can use, check the following array:
 |mouseleave||blur|unload|
 
 Learn more at the [W3School event handler page](https://www.w3schools.com/jquery/jquery_events.asp).
+
+### Useful tips
+
+1) The use of `$(this)` and `$(event.currentTarget)`
+When writing an event handler and defining the events that may occurs, it is a good practice to use the latter notations.
+
+The use of `$(this)` allows you to edit the objects of the class `".menu-button"` quickly without having to write the name again.
+```js
+  $('.menu-button').on('click', () => {
+    $('#nav-menu').show();
+    $(this).css('color', '#FF00FF');
+  });
+```
+
+`$(event.currentTarget)` is doing a slightly different work because it will only affect the **one element that has been triggered** instead of every element that share the class name.
 
 ### Arguments & Callbacks
 Take note that some events/effects can accept multiple arguments. 
