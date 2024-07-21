@@ -26,6 +26,7 @@ By using the Jquery library, you'll be able to save a huge amount of time and ac
 * [Setting up Jquery](#setting-up-jquery)
 * [Define variable and select elements](#define-variable-and-select-elements)
 * [Event handler](#event-handler)
+* [Effects](#effects)
 * [Style Methods](#style-methods)
 * [Moving inside the DOM](#moving-inside-the-dom)
 
@@ -325,6 +326,16 @@ $('.text').css({
 ```
 
 Note that the way to write it greatly differs. When trying to edit multiple properties, you should **write the property names without quotes** and by writing them **with camelCase instead of the classic CSS kebab-case**.
+
+### Edit CSS Property
+An example was shown in the introduction. In order to edit a css property on selected elements, you will have to use the `css` method:
+```js
+$('.text').css('fontSize', '24px');
+```
+When editing **one property**, the first argument would be the property name in camelCase and the second would be the new value.
+
+To edit **multiple properties** at the same time, you can **include an object** as the first argument and omit the second one.
+
 
 ### Animations
 
