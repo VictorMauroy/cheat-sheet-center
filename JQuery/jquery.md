@@ -329,10 +329,23 @@ Note that the way to write it greatly differs. When trying to edit multiple prop
 ### Animations
 
 - **Animate**
-The jquery `.animate()` method allows you to custom an effect which uses CSS properties that should be triggered over time.
+The jquery `.animate()` method allows you to custom an effect which uses CSS properties that should be gradually made over time after an action.
 
 **Syntax**
-`$(selector).animate({params},speed,callback);`
+`$(selector).animate({params}, speed, callback);`
+
+```js
+$('.tile').on('mouseenter', event => {
+  $('.tile-text').animate({
+    color: '#FFFFFF',
+    backgroundColor: '#000000'
+  }, 300); // The animation will take place over 300 milliseconds
+});
+```
+*Example from Codecademy*
+
+*Example description:* Once you triggered the `mouseenter` event, the elements of the class `tile-text` will starts to change their color to white and their background to black over 300 ms.
+
 
 
 ## Moving inside the DOM
