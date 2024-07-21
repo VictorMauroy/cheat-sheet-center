@@ -23,15 +23,34 @@ $('#close-menu-button').on('click', () =>{
 By using the Jquery library, you'll be able to save a huge amount of time and access a more readable and reusable code.
 
 **TABLE OF CONTENT**
-* [Setting up Jquery](#setting-up-jquery)
-* [Define variable and select elements](#define-variable-and-select-elements)
-* [Event handler](#event-handler)
-* [Effects](#effects)
-* [Style Methods](#style-methods)
-* [Moving inside the DOM](#moving-inside-the-dom)
+* [**Setting up Jquery**](#setting-up-jquery)
+  - [Include Jquery inside your project](#include-jquery-inside-your-project)
+  - [Creating a new file](#creating-a-new-file)
+* [**Define variable and select elements**](#define-variable-and-select-elements)
+  - [Select an object](#select-an-object)
+  - [Variables](#variables)
+* [**Event handler**](#event-handler)
+  - [Define an event handler](#define-an-event-handler)
+  - [Userful tips](#useful-tips)
+  - [Arguments & Callbacks](#arguments--callbacks)
+  - [Chain events](#chain-events)
+* [**Effects**](#effects)
+  - [Slide](#slide)
+  - [Hide, show and toggle](#hide-show-and-toggle)
+  - [Fade](#fade)
+* [**Style Methods**](#style-methods)
+  - [Edit CSS Property](#edit-css-property)
+  - [Edit CSS Classes](#edit-css-classes)
+  - [Animations](#animations)
+* [**Moving inside the DOM**](#moving-inside-the-dom)
 
 
 ## Setting up Jquery
+
+**Subjects:**
+- [Include Jquery inside your project](#include-jquery-inside-your-project)
+- [Creating a new file](#creating-a-new-file)
+
 
 ### Include Jquery inside your project
 Jquery isn't available by default in your project. You will need to add it by inserting a script, there are two ways to do that:
@@ -76,6 +95,10 @@ That's important because you must **wait for the document (DOM) to be loaded bef
 
 ## Define variable and select elements
 
+**Subjects:**
+- [Select an object](#select-an-object)
+- [Variables](#variables)
+
 The main use of Jquery is to quickly select DOM elements and apply various effects and update to them.
 
 ### Select an object
@@ -101,6 +124,12 @@ const $myParagraphs = $('p');
 Follow the `camelCase` syntax and add a `$` before your variable name. This isn't required but it's a lot easier to know which variable is from native Javascript and which one is from jquery.
 
 ## Event handler and effects
+
+**Subjects:**
+- [Define an event handler](#define-an-event-handler)
+- [Userful tips](#useful-tips)
+- [Arguments & Callbacks](#arguments--callbacks)
+- [Chain events](#chain-events)
 
 Once you're able to select elements inside your document, you will surely search how to add interaction. You can do that by hading **Event Handlers**.
 
@@ -204,6 +233,12 @@ $('#menu-button').on('mouseenter', () => {
 *Example from Codecademy*
 
 ## Effects
+
+**Subjects:**
+- [Slide](#slide)
+- [Hide, show and toggle](#hide-show-and-toggle)
+- [Fade](#fade)
+
 **Useful links:** [All Jquery effects](https://api.jquery.com/category/effects/)
 
 Jquery effects are quite simple to understand, let's show you some examples.
@@ -308,6 +343,11 @@ $(selector).fadeTo(speed, opacity, callback);
 ```
 
 ## Style Methods
+
+**Subjects:**
+- [Edit CSS Property](#edit-css-property)
+- [Edit CSS Classes](#edit-css-classes)
+- [Animations](#animations)
 
 Check that [useful link](https://api.jquery.com/category/css/) if you want to know every methods that can affect CSS.
 
