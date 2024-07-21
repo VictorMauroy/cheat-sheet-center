@@ -207,6 +207,17 @@ $('#menu-button').on('mouseenter', () => {
 
 Jquery effects are quite simple to understand, let's show you some examples.
 
+**String as speed**: Note that many effect methods allows the use of a string instead of a float value. For instance:
+```js
+$('#menu-button').on('mouseenter', () => {
+  $('#menu').show(200);
+  // can be replaced by:
+  $('#menu').show("fast");
+  // or
+  $('#menu').show("slow");
+});
+```
+
 ### Hide, show and toggle
 
 That's quite straighforward.
@@ -230,13 +241,53 @@ $('#menu-button').on('click', () => {
 
 The **syntax** to follow:
 - Hide:
-`$(selector).hide(speed,callback);`
+`$(selector).hide(speed, callback);`
 
-- Show: `$(selector).show(speed,callback);`
+- Show: `$(selector).show(speed, callback);`
 
-- Toggle: `$(selector).toggle(speed,callback);`
+- Toggle: `$(selector).toggle(speed, callback);`
 
 Speed in milliseconds.
+
+### Fade
+There are four fade methods. 
+
+- **FadeIn**
+Used to **gradually show** an hidden element
+```js
+$("button").click(function(){
+  $("#div1").fadeIn();
+  $("#div2").fadeIn("slow");
+  $("#div3").fadeIn(3000);
+  //You can also add a Callback.
+});
+```
+*Examples from W3Schools* <br>
+
+- **FadeOut**
+Used to **gradually hide** an hidden element
+```js
+$("button").click(function(){
+  $("#div1").fadeOut();
+  $("#div2").fadeOut("fast");
+  $("#div3").fadeOut(2000);
+  //You can also add a Callback.
+});
+```
+
+- **FadeToggle** 
+Works the same as the previous ones but depends of the current state of the targeted element.
+```js 
+$(selector).fadeToggle(speed, callback);
+// Optional callback
+```
+
+- **FadeTo** Fade an element to a given opacity
+```js
+$(selector).fadeTo(speed, opacity, callback);
+// Optional callback
+```
+
 
 ## Style Methods
 
