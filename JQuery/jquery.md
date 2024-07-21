@@ -288,7 +288,35 @@ $(selector).fadeTo(speed, opacity, callback);
 // Optional callback
 ```
 
+### Slide
 
 ## Style Methods
+
+When working with methods that should affect the CSS properties of an object, you can either:
+- Apply **one modification**
+```js
+// Edit one property
+$('.text').css('color', 'red');
+```
+- Apply **multiple modifications** at the same time
+```js
+// Edit multiple properties by using an object as argument.
+$('.text').css({
+  color: 'red',
+  backgroundColor: 'gray',
+  fontSize: '24px'
+});
+```
+
+Note that the way to write it greatly differs. When trying to edit multiple properties, you should **write the property names without quotes** and by writing them **with camelCase instead of the classic CSS kebab-case**.
+
+### Animations
+
+- **Animate**
+The jquery `.animate()` method allows you to custom an effect which uses CSS properties that should be triggered over time.
+
+**Syntax**
+`$(selector).animate({params},speed,callback);`
+
 
 ## Moving inside the DOM
