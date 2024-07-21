@@ -346,6 +346,28 @@ $('.tile').on('mouseenter', event => {
 
 *Example description:* Once you triggered the `mouseenter` event, the elements of the class `tile-text` will starts to change their color to white and their background to black over 300 ms.
 
+- **Stop**
+As its name says, that method allows to stop the ongoing animations of the selected elements. 
 
+*Utility*: It can be quite useful when you don't want an effect to run when it's already ongoing (which is visually bad) or to skip and animation and start the next one.
+
+**Syntax:** `$(selector).stop(stopAll, goToEnd);`
+<br>
+The two arguments are optional. Check that description:
+> *W3Schools* <br>
+The optional **stopAll** parameter specifies whether also the animation queue should be cleared or not. **Default is false**, which means that only the active animation will be stopped, allowing any queued animations to be performed afterwards.
+<br>
+The optional **goToEnd** parameter specifies whether or not to complete the current animation immediately. **Default is false**.
+
+```js
+$('.tile').on('mouseleave', event => {
+  $('.tile-text').stop(
+    true, /* stopAll */
+    true /* goToEnd */
+  );
+});
+```
+
+**Important**: the stop method can also be used to **stop sliding, fading and other effects**.
 
 ## Moving inside the DOM
