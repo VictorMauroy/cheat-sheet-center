@@ -309,6 +309,8 @@ $(selector).fadeTo(speed, opacity, callback);
 
 ## Style Methods
 
+Check that [useful link](https://api.jquery.com/category/css/) if you want to know every methods that can affect CSS.
+
 When working with methods that should affect the CSS properties of an object, you can either:
 - Apply **one modification**
 ```js
@@ -335,6 +337,29 @@ $('.text').css('fontSize', '24px');
 When editing **one property**, the first argument would be the property name in camelCase and the second would be the new value.
 
 To edit **multiple properties** at the same time, you can **include an object** as the first argument and omit the second one.
+
+### Edit CSS Classes
+There are four interesting methods which work with CSS Classes:
+- `addClass` add a class to the selected elements.
+```js
+$( "p" ).addClass( "myClass" );
+$( "p" ).addClass( "firstClass secondClass" ); // You can add multiple classes at once.
+```
+You could also use a function as argument which would return a string:
+```js
+$(selector).addClass(function() {
+  // Define a function that could return a class name as a string.
+})
+```
+- `removeClass` remove a class from the selected elements.
+```js
+$( "p" ).removeClass( "myClass" );
+$( "p" ).removeClass( "firstClass secondClass" ); // You can add multiple classes at once.
+
+$( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" ); // You can chain. Quite useful to exchange classes on an element.
+```
+- `toggleClass` either remove or add a class, depending of the selected elements (Having it already or not).
+- `hasClass` allows to check if an object already has a specific class.
 
 
 ### Animations
