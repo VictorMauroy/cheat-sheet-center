@@ -218,6 +218,24 @@ $('#menu-button').on('mouseenter', () => {
 });
 ```
 
+### Slide
+
+The slide methods are similar to `hide`, `show` and `toggle`. You will be able to use `slideUp`, `slideDown` and `slideToggle`.
+
+**Syntax:** `$(selector).slideMethod(duration, callback);`
+
+```js
+$('#menu-button').on('click', () => {
+  // menu appears over 1000ms duration
+  $('#menu').slideDown(1000);
+});
+```
+The default duration (without argument) is 400ms.
+
+- `SlideUp` will **show** the targeted elements **with a sliding animation**.
+- `SlideDown` will **hide** the targeted elements with a sliding animation.
+- `SlideToggle` will hide or show with a sliding animation the targeted elements, depending of the current visibility state .
+
 ### Hide, show and toggle
 
 That's quite straighforward.
@@ -287,8 +305,6 @@ $(selector).fadeToggle(speed, callback);
 $(selector).fadeTo(speed, opacity, callback);
 // Optional callback
 ```
-
-### Slide
 
 ## Style Methods
 
