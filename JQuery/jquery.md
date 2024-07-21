@@ -202,6 +202,42 @@ $('#menu-button').on('mouseenter', () => {
 ```
 *Example from Codecademy*
 
+## Effects
+**Useful links:** [All Jquery effects](https://api.jquery.com/category/effects/)
+
+Jquery effects are quite simple to understand, let's show you some examples.
+
+### Hide, show and toggle
+
+That's quite straighforward.
+```js
+// Showing a menu when entering a specific button area
+$('#menu-button').on('mouseenter', () => {
+  $('#menu').show();
+});
+
+// Hiding a menu when leaving a specific button area
+$('#menu-button').on('mouseleave', () => {
+  $('#menu').hide();
+});
+
+// Toggle (invert) visibility of an element when performing a click on a specific button.
+$('#menu-button').on('click', () => {
+  // Hide or show, depending of the current visibility of "menu".
+  $('#menu').toggle(); 
+});
+```
+
+The **syntax** to follow:
+- Hide:
+`$(selector).hide(speed,callback);`
+
+- Show: `$(selector).show(speed,callback);`
+
+- Toggle: `$(selector).toggle(speed,callback);`
+
+Speed in milliseconds.
+
 ## Style Methods
 
 ## Moving inside the DOM
