@@ -447,3 +447,26 @@ $('.tile').on('mouseleave', event => {
 **Important**: the stop method can also be used to **stop sliding, fading and other effects**.
 
 ## Moving inside the DOM
+
+When affecting an element appearance or triggering an effect, you could need to edit adjacent elements or the ones above or under it.
+
+That's when the principle of **ancestors** and **descendants** prove itself useful.
+
+Check the following scheme *from W3School*:
+
+![Ancestors and descendants scheme](./resources/img_travtree.png)
+
+**Explainations:** 
+The right `<li>` has two **childs** `<span>`, the latter being **siblings**. The `<li>` also has a **parent** which is the `<ul>` element. <br>
+Note that any of the `<span>` could be called a **descendant** of the `<ul>`, `<li>` or `<div>` elements. 
+
+### Reach ancestors
+
+
+### Reach descendants
+
+
+### Reach siblings
+
+
+### Others traversing methods
