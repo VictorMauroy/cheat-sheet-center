@@ -461,7 +461,52 @@ The right `<li>` has two **childs** `<span>`, the latter being **siblings**. The
 Note that any of the `<span>` could be called a **descendant** of the `<ul>`, `<li>` or `<div>` elements. 
 
 ### Reach ancestors
+There are three methods that can help you selected one or many parents elements:
+- `parent` allows you to get the nearest parent.
+>index.html
+```html
+<article>
+  <p class="explainations">
+</article>
+```
+>index.js
+```js
+  $('.explainations').parent();
+  // You will get the <article> element.
+```
 
+- `parents`
+Allows you to get every parent until the `<html>` element.
+>index.html
+```html
+<div>
+  <article>
+    <p class="explainations">
+  </article>
+</div>
+```
+>index.js
+```js
+  $('.explainations').parents();
+  // You will get the <div> and <article> element.
+```
+
+- `parentsUntil`
+>index.html
+```html
+<div>
+  <div class="article-collection">
+    <article>
+      <p class="explainations">
+    </article>
+  </div>
+</div>
+```
+>index.js
+```js
+  $('.explainations').parentsUntil('.article-collection');
+  // You will get the <div> that has a class and the <article> element but not the exterior div.
+```
 
 ### Reach descendants
 
