@@ -88,8 +88,6 @@ $(document).ready(() => {
     $(/*Object to select*/).on('click', () => {
     $(/* Current or another object*/).anAction(/* Parameters*/);
 });
-
-}
 ```
 That's important because you must **wait for the document (DOM) to be loaded before executing anything!**
 
